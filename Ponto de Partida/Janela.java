@@ -372,7 +372,7 @@ public class Janela extends JFrame {
     private void enviarImagemParaServidor() {
         BufferedImage imagem = capturarImagemDoPainel();
         try (MongoClient mongoClient = MongoClients
-                .create("mongodb+srv://pedrohliedu:if0DCZoTailaemEe@cluster0.vtnlrbv.mongodb.net/")) {
+                .create("mongodb+srv://your_mongodb-key.vtnlrbv.mongodb.net/")) {
             MongoDatabase database = mongoClient.getDatabase("POO_JAVA");
             MongoCollection<Document> collection = database.getCollection("desenhos");
 
